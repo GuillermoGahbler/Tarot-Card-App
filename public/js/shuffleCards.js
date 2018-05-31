@@ -53,8 +53,9 @@ setTimeout(function() {
 }
 
 
-
-let cardShuffleArray = Array.from({ length: 78 }, (x, i) => i);
+let cardShuffleArray = Array.from({ length: 79 }, (x, i) => i)
+  .filter(x=> x !== 0);
+// let cardShuffleArray = Array.from({ length: 78 }, (x, i) => i);
 
 //function that creates a randomly organized number array for the shuffling animation
 
