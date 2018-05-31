@@ -16,7 +16,7 @@ $(document).ready(function () {
             // $.ajax("http://localhost:3000/api/cards?ids=" + localStorage.getItem("array"))
             .done(function (data) {
                 console.log(data);
-                for (i = 0; i < array.length; i++) {
+                for (i = 1; i < array.length; i++) {
                     console.log(data[i].image);
                     $("#b" + (i + 1)).css("background-image", "url(../images/" + data[i].image + ")");
                 }
